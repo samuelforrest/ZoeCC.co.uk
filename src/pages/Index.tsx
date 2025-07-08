@@ -69,7 +69,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12">What's Included</h2>
@@ -131,7 +130,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Image Gallery */}
       <section className="py-20 px-4 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12">Cats I've Cared For</h2>
@@ -229,7 +227,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12">What Cat Parents Say</h2>
