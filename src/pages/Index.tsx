@@ -93,6 +93,17 @@ const Index = () => {
                   <p className="text-muted-foreground">Daily maintenance to keep your cat's environment clean and comfortable</p>
                 </div>
               </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="bg-primary/10 p-3 rounded-lg">
+                  <Flower className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-medium text-foreground mb-2">Basic Garden Care</h3>
+                  <p className="text-muted-foreground">Watering your flowers, with your permission</p>
+                </div>
+              </div>
+            </div>
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
