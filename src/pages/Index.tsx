@@ -309,7 +309,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="bg-card border-t border-border py-12 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center space-y-4">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Heart className="h-6 w-6 text-primary" />
             <span className="font-serif text-2xl text-primary">ZoeCC</span>
@@ -317,6 +317,19 @@ const Index = () => {
           <p className="text-muted-foreground">
             Gentle, loving cat care in Teddington
           </p>
+          <div className="text-sm text-muted-foreground/80 pt-4 border-t border-border/50">
+            <p>
+              © 2025 ZoeCC. Site created by{' '}
+              <a 
+                href="https://www.samuelforrest.me" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 transition-colors underline"
+              >
+                Samuel Forrest
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
     </div>
