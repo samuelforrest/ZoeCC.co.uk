@@ -193,7 +193,37 @@ const Index = () => {
                     />
                   </div>
                   <div className="text-center mt-4">
-                    <p className="font-medium text-foreground">Lily</p>
+                    <p className="font-medium text-foreground">More of Lily</p>
+                  </div>
+                </div>
+              </CarouselItem>
+
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="relative group">
+                  <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
+                    <img 
+                      src="/photos/cat6.jpeg" 
+                      alt="Beautiful grey cat named Lisa" 
+                      className="w-full h-80 object-cover"
+                    />
+                  </div>
+                  <div className="text-center mt-4">
+                    <p className="font-medium text-foreground">Lisa</p>
+                  </div>
+                </div>
+              </CarouselItem>
+
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="relative group">
+                  <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
+                    <img 
+                      src="/photos/cat7.jpeg" 
+                      alt="Beautiful cat named Neli" 
+                      className="w-full h-80 object-cover"
+                    />
+                  </div>
+                  <div className="text-center mt-4">
+                    <p className="font-medium text-foreground">Neli</p>
                   </div>
                 </div>
               </CarouselItem>
@@ -327,6 +357,15 @@ const Index = () => {
                 className="text-primary hover:text-primary/80 transition-colors underline"
               >
                 Samuel Forrest
+              </a>
+            </p>
+            <p className="mt-2">
+              Spotted an error?{' '}
+              <a 
+                href="mailto:sam@samuelforrest.me"
+                className="text-primary hover:text-primary/80 transition-colors underline"
+              >
+                Contact sam@samuelforrest.me
               </a>
             </p>
           </div>
