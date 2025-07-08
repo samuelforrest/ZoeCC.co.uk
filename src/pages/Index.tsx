@@ -1,5 +1,5 @@
 import { WhatsAppButton, WhatsAppLink } from '@/components/WhatsAppButton';
-import { Heart, Camera, Coffee, Droplets, Sparkles } from 'lucide-react';
+import { Heart, Camera, Coffee, Droplets, Sparkles, Flower } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from '@/components/ui/carousel';
 import { useEffect, useState } from 'react';
 
@@ -33,7 +33,7 @@ const Index = () => {
                 <span className="text-primary">Zoe</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
-                £8/hr, tailored care for every cat personality, while you're on holiday.
+                £9/visit, tailored care for every cat personality, while you're away or on holiday
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start bg-mut">
@@ -62,7 +62,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground">About Zoe</h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            With 3 years of experience caring for cats of all personalities, I understand that every cat has unique needs. 
+            With 3 years of experience caring for cats of many different personalities, I understand that every cat has unique needs. 
             Whether your cat is shy and needs gentle patience, or playful and requires active engagement, I provide personalized care 
             that keeps them comfortable.
           </p>
@@ -92,6 +92,16 @@ const Index = () => {
                 <div>
                   <h3 className="font-medium text-foreground mb-2">Litter Cleaning</h3>
                   <p className="text-muted-foreground">Daily maintenance to keep your cat's environment clean and comfortable</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="bg-primary/10 p-3 rounded-lg">
+                  <Flower className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-medium text-foreground mb-2">Basic Garden Care</h3>
+                  <p className="text-muted-foreground">Watering your flowers, with your permission</p>
                 </div>
               </div>
             </div>
@@ -125,7 +135,7 @@ const Index = () => {
       <section className="py-20 px-4 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12">Cats I've Cared For</h2>
-          <h3 className="font-serif text-m md:text-4xl text-foreground text-center mb-12">Please swipe through</h3>
+          <p className="font-serif text-m md:text-m text-foreground text-center mb-12">Please swipe through</p>
 
           
           <Carousel
@@ -142,9 +152,12 @@ const Index = () => {
                   <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                     <img 
                       src="/photos/cat2.jpeg" 
-                      alt="Adorable tabby cat" 
+                      alt="Adorable tabby cat named Sweep" 
                       className="w-full h-80 object-cover"
                     />
+                  </div>
+                  <div className="text-center mt-4">
+                    <p className="font-medium text-foreground">Sweep</p>
                   </div>
                 </div>
               </CarouselItem>
@@ -154,9 +167,12 @@ const Index = () => {
                   <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                     <img 
                       src="/photos/cat3.jpeg" 
-                      alt="Sleepy cat" 
+                      alt="Sleepy cat named Lily" 
                       className="w-full h-80 object-cover"
                     />
+                  </div>
+                  <div className="text-center mt-4">
+                    <p className="font-medium text-foreground">Lily</p>
                   </div>
                 </div>
               </CarouselItem>
@@ -166,9 +182,12 @@ const Index = () => {
                   <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                     <img 
                       src="/photos/cat4.jpeg" 
-                      alt="Black cat with food bowls" 
+                      alt="Black cat named Sooty with food bowls" 
                       className="w-full h-80 object-cover"
                     />
+                  </div>
+                  <div className="text-center mt-4">
+                    <p className="font-medium text-foreground">Sooty</p>
                   </div>
                 </div>
               </CarouselItem>
@@ -178,9 +197,12 @@ const Index = () => {
                   <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                     <img 
                       src="/photos/cat5.jpeg" 
-                      alt="Another beautiful cat" 
+                      alt="Beautiful cat named Nelli" 
                       className="w-full h-80 object-cover"
                     />
+                  </div>
+                  <div className="text-center mt-4">
+                    <p className="font-medium text-foreground">Nelli</p>
                   </div>
                 </div>
               </CarouselItem>
@@ -230,8 +252,7 @@ const Index = () => {
             
             <div className="bg-card rounded-xl p-8 shadow-soft">
               <p className="text-muted-foreground italic leading-relaxed mb-6">
-                "Our two cats have completely different personalities, but Zoe understood them both perfectly.
-                Zoe is our regular cat carer now."
+                "Testimonial TBC"
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -254,11 +275,11 @@ const Index = () => {
           <div className="bg-card rounded-xl p-8 shadow-soft max-w-2xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-4">
               <Sparkles className="h-8 w-8 text-primary" />
-              <span className="font-serif text-4xl text-primary">£8</span>
-              <span className="text-xl text-muted-foreground">per hour</span>
+              <span className="font-serif text-4xl text-primary">£9</span>
+              <span className="text-xl text-muted-foreground">per visit</span>
             </div>
             <p className="text-lg text-muted-foreground">
-              No hidden fees. Local only (Greater London, Weybridge).
+              No hidden fees. Local only (Teddington Area).
             </p>
           </div>
         </div>
@@ -294,7 +315,7 @@ const Index = () => {
             <span className="font-serif text-2xl text-primary">ZoeCC</span>
           </div>
           <p className="text-muted-foreground">
-            Gentle, loving cat care in Greater London & Weybridge
+            Gentle, loving cat care in Teddington
           </p>
         </div>
       </footer>
