@@ -351,7 +351,7 @@ const Index = () => {
             <p>
               © 2025 ZoeCC. Site created by{' '}
               <a 
-                href="https://www.samuelforrest.me" 
+                href="https://www.samuelforrest.me/?utm_source=zoecc.co.uk&utm_medium=redirect&utm_campaign=internal-crosslink" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:text-primary/80 transition-colors underline"
