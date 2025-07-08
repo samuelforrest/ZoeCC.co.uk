@@ -236,7 +236,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-card rounded-xl p-8 shadow-soft">
               <p className="text-muted-foreground italic leading-relaxed mb-6">
-                "Our cat, Lily, had a fabulous holiday with Zoe! She is a cet who thrives on live and attention, so it was
+                "Our cat, Lily, had a fabulous holiday with Zoe! She is a cat who thrives on live and attention, so it was
                 very reassuring to know that she was being pampered while we were away!"
               </p>
               <div className="flex items-center gap-3">
