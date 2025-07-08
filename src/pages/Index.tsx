@@ -1,8 +1,26 @@
 import { WhatsAppButton, WhatsAppLink } from '@/components/WhatsAppButton';
 import { Heart, Camera, Coffee, Droplets, Sparkles } from 'lucide-react';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from '@/components/ui/carousel';
+import { useEffect, useState } from 'react';
 
 const Index = () => {
+  const [api, setApi] = useState<CarouselApi>()
+  const [current, setCurrent] = useState(0)
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    if (!api) {
+      return
+    }
+
+    setCount(api.scrollSnapList().length)
+    setCurrent(api.selectedScrollSnap() + 1)
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1)
+    })
+  }, [api])
+
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -107,45 +125,81 @@ const Index = () => {
       <section className="py-20 px-4 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12">Cats I've Cared For</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="relative group">
-              <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
-                <img 
-                  src="/photos/cat2.jpeg" 
-                  alt="Adorable tabby cat" 
-                  className="w-full h-80 object-cover"
-                />
-              </div>
-            </div>
-            
-            <div className="relative group">
-              <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
-                <img 
-                  src="/photos/cat3.jpeg" 
-                  alt="Sleepy cat" 
-                  className="w-full h-80 object-cover"
-                />
-              </div>
-            </div>
-            
-            <div className="relative group md:col-span-2 lg:col-span-1">
-              <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
-                <img 
-                  src="/photos/cat4.jpeg" 
-                  alt="Black cat with food bowls" 
-                  className="w-full h-80 object-cover"
-                />
-              </div>
-            </div>
+          
+          <Carousel
+            setApi={setApi}
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-5xl mx-auto"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="relative group">
+                  <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
+                    <img 
+                      src="/photos/cat2.jpeg" 
+                      alt="Adorable tabby cat" 
+                      className="w-full h-80 object-cover"
+                    />
+                  </div>
+                </div>
+              </CarouselItem>
+              
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="relative group">
+                  <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
+                    <img 
+                      src="/photos/cat3.jpeg" 
+                      alt="Sleepy cat" 
+                      className="w-full h-80 object-cover"
+                    />
+                  </div>
+                </div>
+              </CarouselItem>
+              
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="relative group">
+                  <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
+                    <img 
+                      src="/photos/cat4.jpeg" 
+                      alt="Black cat with food bowls" 
+                      className="w-full h-80 object-cover"
+                    />
+                  </div>
+                </div>
+              </CarouselItem>
 
-            <div className="relative group md:col-span-2 lg:col-span-1">
-              <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
-                <img 
-                  src="/photos/cat5.jpeg" 
-                  alt="Black cat with food bowls" 
-                  className="w-full h-80 object-cover"
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="relative group">
+                  <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
+                    <img 
+                      src="/photos/cat5.jpeg" 
+                      alt="Another beautiful cat" 
+                      className="w-full h-80 object-cover"
+                    />
+                  </div>
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            
+            <CarouselPrevious className="hidden sm:flex -left-12 bg-primary/10 border-primary/20 hover:bg-primary/20 text-primary hover:text-primary" />
+            <CarouselNext className="hidden sm:flex -right-12 bg-primary/10 border-primary/20 hover:bg-primary/20 text-primary hover:text-primary" />
+          </Carousel>
+          
+          {/* Navigation dots */}
+          <div className="flex justify-center mt-8">
+            <div className="flex space-x-2">
+              {Array.from({ length: count }, (_, index) => (
+                <button
+                  key={index}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 hover:scale-110 ${
+                    index + 1 === current ? 'bg-primary' : 'bg-primary/30 hover:bg-primary/50'
+                  }`}
+                  onClick={() => api?.scrollTo(index)}
                 />
-              </div>
+              ))}
             </div>
           </div>
         </div>
