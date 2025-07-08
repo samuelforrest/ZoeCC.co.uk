@@ -1,73 +1,163 @@
-# Welcome to your Lovable project
+# ZoeCC - Cat Care Services Website
 
-## Project info
+A professional website for **Zoe's Cat Care** services in Teddington, providing gentle and loving cat care while owners are away.
 
-**URL**: https://lovable.dev/projects/99810a8f-b4ac-4d5d-9d12-ab7cc4475f01
+🌐 **Live Site**: [zoecc.co.uk](https://zoecc.co.uk)
 
-## How can I edit this code?
+## 📋 Project Overview
 
-There are several ways of editing your application.
+This is a client project - a responsive single-page application built for Zoe Forrest's cat care business in Teddington, UK. The website showcases her services, testimonials, and provides easy contact via WhatsApp integration.
 
-**Use Lovable**
+## 🛠 Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/99810a8f-b4ac-4d5d-9d12-ab7cc4475f01) and start prompting.
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn/ui component library
+- **Icons**: Lucide React
+- **Carousel**: Embla Carousel
+- **Deployment**: Netlify
+- **Package Manager**: npm
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Features
 
-**Use your preferred IDE**
+- Responsive design optimized for mobile and desktop
+- Interactive cat photo carousel with navigation
+- WhatsApp integration for direct client contact
+- SEO optimized with structured data
+- Professional testimonials section
+- Modern UI with elegant animations
+- Custom favicon and branding
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📁 Project Structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+zoe-cat-cinema-web/
+├── public/
+│   ├── photos/           # Cat photos for carousel
+│   ├── favicon-96x96.png # Site favicon
+│   └── ...               # Other static assets
+├── src/
+│   ├── components/
+│   │   ├── ui/          # Shadcn/ui components
+│   │   └── WhatsAppButton.tsx
+│   ├── pages/
+│   │   └── Index.tsx    # Main page component
+│   ├── lib/
+│   │   └── utils.ts     # Utility functions
+│   └── hooks/           # Custom React hooks
+├── index.html
+├── package.json
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
+## 🔧 Local Development
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
 
-**Use GitHub Codespaces**
+- Node.js (v18 or higher)
+- npm
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Installation & Setup
 
-## What technologies are used for this project?
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd zoe-cat-cinema-web
+   ```
 
-This project is built with:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-## How can I deploy this project?
+4. **Open in browser**
+   ```
+   http://localhost:5173
+   ```
 
-Simply open [Lovable](https://lovable.dev/projects/99810a8f-b4ac-4d5d-9d12-ab7cc4475f01) and click on Share -> Publish.
+### Available Scripts
 
-## Can I connect a custom domain to my Lovable project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
 
-Yes, you can!
+## 🚀 Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The site is deployed on Netlify with the following configuration:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Build Command**: `npm run build`
+- **Publish Directory**: `dist`
+- **Branch**: `main`
+
+### Build Settings
+
+For Netlify deployment, ensure these settings:
+
+```toml
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
+
+## 📱 Key Components
+
+### WhatsApp Integration
+Direct messaging functionality allowing potential clients to contact Zoe instantly via WhatsApp with pre-filled messages.
+
+### Photo Carousel
+Interactive carousel showcasing cats that Zoe has cared for, with:
+- Touch/swipe support on mobile
+- Arrow navigation on desktop
+- Dot indicators
+- Cat names displayed
+
+### Responsive Design
+- Mobile-first approach
+- Optimized for all screen sizes
+- Touch-friendly interface
+
+## 🎨 Design Features
+
+- **Color Scheme**: Warm brown tones reflecting a cozy, professional cat care aesthetic
+- **Typography**: Playfair Display (serif) for headings, Inter (sans-serif) for body text
+- **Animations**: Subtle hover effects and smooth transitions
+- **Shadows**: Custom shadow system for depth and elegance
+
+## 📞 Contact & Services
+
+The website promotes Zoe's cat care services including:
+- Feeding & fresh water
+- Litter cleaning
+- Play time
+- Photo updates for owners
+- Basic garden care
+
+**Pricing**: £9 per visit
+**Service Area**: Teddington and surrounding areas
+
+## 👨‍💻 Developer
+
+**Samuel Forrest**
+- Portfolio: [samuelforrest.me](https://www.samuelforrest.me)
+- This project was built as a professional client website
+
+## 📄 License
+
+This is a client project. All rights reserved to the business owner (Zoe Forrest) and developer (Samuel Forrest).
+
+---
+
+*Built with ❤️ for Zoe's Cat Care Services*
