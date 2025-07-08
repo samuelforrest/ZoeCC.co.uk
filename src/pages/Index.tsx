@@ -62,7 +62,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground">About Zoe</h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            With 2 years of experience caring for cats of all personalities, I understand that every cat has unique needs. 
+            With 3 years of experience caring for cats of all personalities, I understand that every cat has unique needs. 
             Whether your cat is shy and needs gentle patience, or playful and requires active engagement, I provide personalized care 
             that keeps them comfortable.
           </p>
@@ -81,7 +81,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-foreground mb-2">Feeding & Fresh Water</h3>
-                  <p className="text-muted-foreground">The basics will be done</p>
+                  <p className="text-muted-foreground">Whatever food and treats your cat normally has</p>
                 </div>
               </div>
               
@@ -103,7 +103,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-foreground mb-2">Play Time</h3>
-                  <p className="text-muted-foreground">Engaging activities and gentle companionship tailored to your cat's personality</p>
+                  <p className="text-muted-foreground">Play time with your cat</p>
                 </div>
               </div>
               
@@ -113,7 +113,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-foreground mb-2">Photo Updates for Owners</h3>
-                  <p className="text-muted-foreground">Regular photos and updates so you can see how your cat is doing</p>
+                  <p className="text-muted-foreground">Regular photos and updates so you can see how your cat is doing, sent via WhatsApp</p>
                 </div>
               </div>
             </div>
@@ -125,6 +125,8 @@ const Index = () => {
       <section className="py-20 px-4 bg-card/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground text-center mb-12">Cats I've Cared For</h2>
+          <h3 className="font-serif text-m md:text-4xl text-foreground text-center mb-12">Please swipe through</h3>
+
           
           <Carousel
             setApi={setApi}
@@ -212,32 +214,32 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-card rounded-xl p-8 shadow-soft">
               <p className="text-muted-foreground italic leading-relaxed mb-6">
-                "Zoe was absolutely wonderful with our shy rescue cat Luna. She was so patient and gentle, 
-                and Luna actually came out of hiding by day two! The photo updates were a lifesaver."
+                "Our cat, Lily, had a fabulous holiday with Zoe! She is a cet who thrives on live and attention, so it was
+                very reassuring to know that she was being pampered while we were away!"
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-medium">S</span>
+                  <span className="text-primary font-medium">K</span>
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Sarah M.</p>
-                  <p className="text-sm text-muted-foreground">Weybridge</p>
+                  <p className="font-medium text-foreground">Karen</p>
+                  <p className="text-sm text-muted-foreground">🏡 Cat stayed at mine</p>
                 </div>
               </div>
             </div>
             
             <div className="bg-card rounded-xl p-8 shadow-soft">
               <p className="text-muted-foreground italic leading-relaxed mb-6">
-                "Our two cats have completely different personalities, but Zoe understood them both perfectly. 
-                She gave our energetic tabby plenty of playtime and our older cat the gentle attention he needed."
+                "Our two cats have completely different personalities, but Zoe understood them both perfectly.
+                Zoe is our regular cat carer now."
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-medium">J</span>
+                  <span className="text-primary font-medium">F</span>
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">James T.</p>
-                  <p className="text-sm text-muted-foreground">Greater London</p>
+                  <p className="font-medium text-foreground">Fiona J.</p>
+                  <p className="text-sm text-muted-foreground">📍Teddington</p>
                 </div>
               </div>
             </div>
