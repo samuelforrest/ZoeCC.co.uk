@@ -35,6 +35,10 @@ All colors MUST be HSL.
     --accent: 30 25% 88%;
     --accent-foreground: 25 35% 35%;
 
+    /* WhatsApp green */
+    --whatsapp: 142 70% 49%;
+    --whatsapp-foreground: 0 0% 100%;
+
     /* Keep destructive as is */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 35 25% 97%;

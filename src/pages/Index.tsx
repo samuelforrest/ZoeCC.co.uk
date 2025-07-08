@@ -1,4 +1,3 @@
-import { SpeechBubble } from '@/components/SpeechBubble';
 import { WhatsAppButton, WhatsAppLink } from '@/components/WhatsAppButton';
 import { Heart, Camera, Coffee, Droplets, Sparkles } from 'lucide-react';
 
@@ -34,9 +33,6 @@ const Index = () => {
                 alt="Zoe holding a beautiful fluffy cat" 
                 className="w-full h-auto object-cover"
               />
-              <SpeechBubble className="absolute top-4 left-4 animate-fade-in">
-                I love Zoe! 💕
-              </SpeechBubble>
             </div>
           </div>
         </div>
@@ -119,9 +115,6 @@ const Index = () => {
                   alt="Adorable tabby cat" 
                   className="w-full h-80 object-cover"
                 />
-                <SpeechBubble className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  I love Zoe! 😸
-                </SpeechBubble>
               </div>
             </div>
             
@@ -132,9 +125,6 @@ const Index = () => {
                   alt="Sleepy content cat" 
                   className="w-full h-80 object-cover"
                 />
-                <SpeechBubble className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  I love Zoe! 😴
-                </SpeechBubble>
               </div>
             </div>
             
@@ -145,9 +135,6 @@ const Index = () => {
                   alt="Black cat with food bowls" 
                   className="w-full h-80 object-cover"
                 />
-                <SpeechBubble className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  I love Zoe! 🖤
-                </SpeechBubble>
               </div>
             </div>
           </div>
