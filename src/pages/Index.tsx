@@ -43,10 +43,9 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground">About Zoe</h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            With years of experience caring for cats of all personalities, I understand that every feline friend has unique needs. 
+            With 2 years of experience caring for cats of all personalities, I understand that every cat has unique needs. 
             Whether your cat is shy and needs gentle patience, or playful and requires active engagement, I provide personalized care 
-            that keeps them comfortable and happy while you're away. My approach is always gentle, loving, and attentive to your cat's 
-            individual routine and preferences.
+            that keeps them comfortable.
           </p>
         </div>
       </section>
@@ -63,7 +62,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-foreground mb-2">Feeding & Fresh Water</h3>
-                  <p className="text-muted-foreground">Following your cat's exact routine and dietary preferences</p>
+                  <p className="text-muted-foreground">The basics will be done</p>
                 </div>
               </div>
               
@@ -84,7 +83,7 @@ const Index = () => {
                   <Heart className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-foreground mb-2">Play & Comfort Time</h3>
+                  <h3 className="font-medium text-foreground mb-2">Play Time</h3>
                   <p className="text-muted-foreground">Engaging activities and gentle companionship tailored to your cat's personality</p>
                 </div>
               </div>
@@ -173,22 +172,6 @@ const Index = () => {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">James T.</p>
-                  <p className="text-sm text-muted-foreground">Greater London</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-card rounded-xl p-8 shadow-soft">
-              <p className="text-muted-foreground italic leading-relaxed mb-6">
-                "We came home to a very happy and relaxed cat. Zoe clearly has a special way with animals. 
-                The house was spotless and our cat was purring the moment we walked in!"
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-medium">M</span>
-                </div>
-                <div>
-                  <p className="font-medium text-foreground">Maria K.</p>
                   <p className="text-sm text-muted-foreground">Greater London</p>
                 </div>
               </div>
