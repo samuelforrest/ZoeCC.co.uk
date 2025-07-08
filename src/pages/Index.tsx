@@ -1,5 +1,6 @@
 import { WhatsAppButton, WhatsAppLink } from '@/components/WhatsAppButton';
 import { Heart, Camera, Coffee, Droplets, Sparkles } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const Index = () => {
   return (
@@ -29,7 +30,7 @@ const Index = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-elegant">
               <img 
-                src="/lovable-uploads/c6e5a1ec-dca4-4339-9c9c-d031ad30bb1f.png" 
+                src="/photos/cat1.jpeg" 
                 alt="Zoe holding a beautiful fluffy cat" 
                 className="w-full h-auto object-cover"
               />
@@ -110,7 +111,7 @@ const Index = () => {
             <div className="relative group">
               <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                 <img 
-                  src="/lovable-uploads/dab14485-a105-497c-8940-182a91328cad.png" 
+                  src="/photos/cat2.jpeg" 
                   alt="Adorable tabby cat" 
                   className="w-full h-80 object-cover"
                 />
@@ -120,8 +121,8 @@ const Index = () => {
             <div className="relative group">
               <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                 <img 
-                  src="/lovable-uploads/7a26a9b7-fe7e-4e44-a46a-bc83485f252c.png" 
-                  alt="Sleepy content cat" 
+                  src="/photos/cat3.jpeg" 
+                  alt="Sleepy cat" 
                   className="w-full h-80 object-cover"
                 />
               </div>
@@ -130,7 +131,17 @@ const Index = () => {
             <div className="relative group md:col-span-2 lg:col-span-1">
               <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                 <img 
-                  src="/lovable-uploads/6c93bd9a-042e-4e97-9557-a30d39ddf79b.png" 
+                  src="/photos/cat4.jpeg" 
+                  alt="Black cat with food bowls" 
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="relative group md:col-span-2 lg:col-span-1">
+              <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
+                <img 
+                  src="/photos/cat5.jpeg" 
                   alt="Black cat with food bowls" 
                   className="w-full h-80 object-cover"
                 />
