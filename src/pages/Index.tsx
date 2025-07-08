@@ -1,5 +1,5 @@
 import { WhatsAppButton, WhatsAppLink } from '@/components/WhatsAppButton';
-import { Heart, Camera, Coffee, Droplets, Sparkles, Flower } from 'lucide-react';
+import { Heart, Camera, Coffee, Droplets, Sparkles, Flower, CheckCircle } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from '@/components/ui/carousel';
 import { useEffect, useState } from 'react';
 
@@ -231,7 +231,11 @@ const Index = () => {
                   <span className="text-primary font-medium">K</span>
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Karen</p>
+                  <div className="flex items-center gap-2 mb-1">
+                    <p className="font-medium text-foreground">Karen</p>
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-xs text-green-600 font-medium">Verified</span>
+                  </div>
                   <p className="text-sm text-muted-foreground">🏡 Cat stayed at mine</p>
                 </div>
               </div>
@@ -246,7 +250,9 @@ const Index = () => {
                   <span className="text-primary font-medium">F</span>
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Fiona J.</p>
+                  <div className="flex items-center gap-2 mb-1">
+                    <p className="font-medium text-foreground">Fiona J.</p>
+                  </div>
                   <p className="text-sm text-muted-foreground">📍Teddington</p>
                 </div>
               </div>
