@@ -195,12 +195,12 @@ const Index = () => {
                   <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                     <img 
                       src="/photos/cat5.jpeg" 
-                      alt="Beautiful cat named Nelli" 
+                      alt="Beautiful cat named Lily" 
                       className="w-full h-80 object-cover"
                     />
                   </div>
                   <div className="text-center mt-4">
-                    <p className="font-medium text-foreground">Nelli</p>
+                    <p className="font-medium text-foreground">Lily</p>
                   </div>
                 </div>
               </CarouselItem>
@@ -233,7 +233,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-card rounded-xl p-8 shadow-soft">
               <p className="text-muted-foreground italic leading-relaxed mb-6">
-                "Our cat, Lily, had a fabulous holiday with Zoe! She is a cat who thrives on live and attention, so it was
+                "Our cat, Lily, had a fabulous holiday with Zoe! She is a cat who thrives on love and attention, so it was
                 very reassuring to know that she was being pampered while we were away!"
               </p>
               <div className="flex items-center gap-3">
