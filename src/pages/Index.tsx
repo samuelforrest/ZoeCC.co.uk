@@ -311,7 +311,11 @@ const Index = () => {
       <footer className="bg-card border-t border-border py-12 px-4">
         <div className="max-w-4xl mx-auto text-center space-y-4">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Heart className="h-6 w-6 text-primary" />
+            <img 
+              src="/favicon-96x96.png" 
+              alt="ZoeCC Logo" 
+              className="h-8 w-8"
+            />
             <span className="font-serif text-2xl text-primary">ZoeCC</span>
           </div>
           <p className="text-muted-foreground">
