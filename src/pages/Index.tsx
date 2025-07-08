@@ -37,11 +37,14 @@ const Index = () => {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start bg-mut">
-              <WhatsAppButton 
-                phoneNumber="+44 7434 869115" 
-                message="Hi Zoe! I'd like to enquire about cat care services."
-                className="text-lg px-8 py-4"
-              />
+              <div className="flex flex-col items-center lg:items-start">
+                <WhatsAppButton 
+                  phoneNumber="+44 7434 869115" 
+                  message="Hi Zoe! I'd like to enquire about cat care services."
+                  className="text-lg px-8 py-4"
+                />
+                <p className="text-sm text-muted-foreground mt-2">(+44 7434 869115)</p>
+              </div>
             </div>
           </div>
           
