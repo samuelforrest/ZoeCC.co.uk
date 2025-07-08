@@ -2,41 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* ZoeCC Design System - Warm, cinematic, elegant cat care branding
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Warm cream/beige backgrounds */
+    --background: 35 25% 97%;
+    --foreground: 25 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Warm card backgrounds */
+    --card: 35 20% 95%;
+    --card-foreground: 25 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 20% 95%;
+    --popover-foreground: 25 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Warm brown primary - elegant and cat-like */
+    --primary: 25 35% 35%;
+    --primary-foreground: 35 25% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft warm secondary */
+    --secondary: 35 15% 90%;
+    --secondary-foreground: 25 35% 35%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted warm tones */
+    --muted: 35 12% 92%;
+    --muted-foreground: 25 20% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Warm accent */
+    --accent: 30 25% 88%;
+    --accent-foreground: 25 35% 35%;
 
+    /* Keep destructive as is */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 35 25% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Warm borders */
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 25 35% 35%;
 
-    --radius: 0.5rem;
+    /* Cinematic shadows */
+    --shadow-soft: 0 4px 20px -2px hsla(25, 35%, 35%, 0.1);
+    --shadow-elegant: 0 8px 30px -4px hsla(25, 35%, 35%, 0.15);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
