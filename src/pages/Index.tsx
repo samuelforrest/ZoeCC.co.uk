@@ -1,5 +1,5 @@
 import { WhatsAppButton, WhatsAppLink } from '@/components/WhatsAppButton';
-import { Heart, Camera, Coffee, Droplets, Sparkles, Flower, CheckCircle } from 'lucide-react';
+import { Heart, Camera, Coffee, Droplets, Sparkles, CheckCircle } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from '@/components/ui/carousel';
 import { useEffect, useState } from 'react';
 
@@ -23,7 +23,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 text-center lg:text-left">
@@ -33,7 +32,7 @@ const Index = () => {
                 <span className="text-primary">Zoe</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
-                £9/visit, tailored care for every cat personality, while you're away or on holiday
+                £8/visit, tailored care for every cat personality, while you're away or on holiday
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start bg-mut">
@@ -60,7 +59,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Zoe Section */}
       <section className="py-20 px-4 bg-card/50">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground">About Zoe</h2>
@@ -233,7 +231,6 @@ const Index = () => {
             <CarouselNext className="hidden sm:flex -right-12 bg-primary/10 border-primary/20 hover:bg-primary/20 text-primary hover:text-primary" />
           </Carousel>
           
-          {/* Navigation dots */}
           <div className="flex justify-center mt-8">
             <div className="flex space-x-2">
               {Array.from({ length: count }, (_, index) => (
@@ -294,14 +291,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Rates */}
       <section className="py-20 px-4 bg-card/50">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground">Simple, Honest Pricing</h2>
           <div className="bg-card rounded-xl p-8 shadow-soft max-w-2xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-4">
               <Sparkles className="h-8 w-8 text-primary" />
-              <span className="font-serif text-4xl text-primary">£9</span>
+              <span className="font-serif text-4xl text-primary">£8</span>
               <span className="text-xl text-muted-foreground">per visit</span>
             </div>
             <p className="text-lg text-muted-foreground">
@@ -311,7 +307,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="font-serif text-3xl md:text-4xl text-foreground">Check Availability</h2>
@@ -333,7 +328,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-card border-t border-border py-12 px-4">
         <div className="max-w-4xl mx-auto text-center space-y-4">
           <div className="flex items-center justify-center gap-3 mb-4">
@@ -345,7 +339,7 @@ const Index = () => {
             <span className="font-serif text-2xl text-primary">ZoeCC</span>
           </div>
           <p className="text-muted-foreground">
-            Gentle, loving cat care in Teddington
+            Gentle, loving cat care in Teddington, £8/visit.
           </p>
           <div className="text-sm text-muted-foreground/80 pt-4 border-t border-border/50">
             <p>
