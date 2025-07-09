@@ -28,7 +28,7 @@ const Index = () => {
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight animate-fade-in">
-                Gentle, Loving Cat Care with{' '}
+                Zoe Cat Care: Gentle Care with{' '}
                 <span className="text-primary">Zoe</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
