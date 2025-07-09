@@ -217,7 +217,7 @@ const Index = () => {
                     <img 
                       src="/photos/cat7.jpeg" 
                       alt="Beautiful cat named Neli" 
-                      className="w-full h-80 object-cover"
+                      className="w-full h-80 object-cover object-top"
                     />
                   </div>
                   <div className="text-center mt-4">
