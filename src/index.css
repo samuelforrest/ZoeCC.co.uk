@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ZoeCC Design System - Warm, cinematic, elegant cat care branding
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
     /* Warm cream/beige backgrounds */
