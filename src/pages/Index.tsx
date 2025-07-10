@@ -273,17 +273,22 @@ const Index = () => {
             
             <div className="bg-card rounded-xl p-8 shadow-soft">
               <p className="text-muted-foreground italic leading-relaxed mb-6">
-                "Testimonial TBC"
+                "Zoe has cared for our cats Sooty and Sweep since they were kittnes.
+                She has always made sure that they have clean water and fresh food. Zoe also
+                keeps the cats entertained by having playtime, she is kind, friendly, gentle and trustworthy
+                to keep our cats safe. She is our go to cat carer."
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <span className="text-primary font-medium">F</span>
+                  <span className="text-primary font-medium">FJ</span>
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <p className="font-medium text-foreground">Fiona J.</p>
+                    <p className="font-medium text-foreground">Fiona Jones</p>
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                    <span className="text-xs text-green-600 font-medium">Verified</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">📍Teddington</p>
+                  <p className="text-sm text-muted-foreground">📍 Teddington</p>
                 </div>
               </div>
             </div>
