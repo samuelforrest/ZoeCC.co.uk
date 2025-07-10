@@ -50,7 +50,7 @@ const Index = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-elegant">
               <img 
-                src="/photos/cat1.jpeg" 
+                src="/photos/cat1.webp" 
                 alt="Zoe holding a beautiful fluffy cat" 
                 className="w-full h-auto object-cover"
               />
@@ -140,7 +140,7 @@ const Index = () => {
                 <div className="relative group">
                   <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                     <img 
-                      src="/photos/cat2.jpeg" 
+                      src="/photos/cat2.webp" 
                       alt="Adorable tabby cat named Sweep" 
                       className="w-full h-80 object-cover"
                     />
@@ -155,7 +155,7 @@ const Index = () => {
                 <div className="relative group">
                   <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                     <img 
-                      src="/photos/cat3.jpeg" 
+                      src="/photos/cat3.webp" 
                       alt="Sleepy cat named Lily" 
                       className="w-full h-80 object-cover"
                     />
@@ -170,7 +170,7 @@ const Index = () => {
                 <div className="relative group">
                   <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                     <img 
-                      src="/photos/cat4.jpeg" 
+                      src="/photos/cat4.webp" 
                       alt="Black cat named Sooty with food bowls" 
                       className="w-full h-80 object-cover"
                     />
@@ -185,7 +185,7 @@ const Index = () => {
                 <div className="relative group">
                   <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                     <img 
-                      src="/photos/cat5.jpeg" 
+                      src="/photos/cat5.webp" 
                       alt="Beautiful cat named Lily" 
                       className="w-full h-80 object-cover"
                     />
@@ -200,7 +200,7 @@ const Index = () => {
                 <div className="relative group">
                   <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                     <img 
-                      src="/photos/cat6.jpeg" 
+                      src="/photos/cat6.webp" 
                       alt="Beautiful grey cat named Lisa" 
                       className="w-full h-80 object-cover"
                     />
@@ -215,7 +215,7 @@ const Index = () => {
                 <div className="relative group">
                   <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
                     <img 
-                      src="/photos/cat7.jpeg" 
+                      src="/photos/cat7.webp" 
                       alt="Beautiful cat named Neli" 
                       className="w-full h-80 object-cover object-top"
                     />
