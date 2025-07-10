@@ -344,7 +344,7 @@ const Index = () => {
             <span className="font-serif text-2xl text-primary">ZoeCC</span>
           </div>
           <p className="text-muted-foreground">
-            Gentle, loving cat care in Teddington, £8/visit.
+            Gentle, loving cat care in Teddington, £8/visit. Cat Sitter. Cat Sitter Teddington. Cat Care.
           </p>
           <div className="text-sm text-muted-foreground/80 pt-4 border-t border-border/50">
             <p>
