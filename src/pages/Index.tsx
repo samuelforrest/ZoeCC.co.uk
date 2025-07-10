@@ -273,7 +273,7 @@ const Index = () => {
             
             <div className="bg-card rounded-xl p-8 shadow-soft">
               <p className="text-muted-foreground italic leading-relaxed mb-6">
-                "Zoe has cared for our cats Sooty and Sweep since they were kittnes.
+                "Zoe has cared for our cats Sooty and Sweep since they were kittens.
                 She has always made sure that they have clean water and fresh food. Zoe also
                 keeps the cats entertained by having playtime, she is kind, friendly, gentle and trustworthy
                 to keep our cats safe. She is our go to cat carer."
