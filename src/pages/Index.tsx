@@ -225,6 +225,21 @@ const Index = () => {
                   </div>
                 </div>
               </CarouselItem>
+
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="relative group">
+                  <div className="relative rounded-xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-all duration-300">
+                    <img 
+                      src="/photos/cat8.webp" 
+                      alt="Beautiful cat named Boo" 
+                      className="w-full h-80 object-cover object-top"
+                    />
+                  </div>
+                  <div className="text-center mt-4">
+                    <p className="font-medium text-foreground">Boo</p>
+                  </div>
+                </div>
+              </CarouselItem>
             </CarouselContent>
             
             <CarouselPrevious className="hidden sm:flex -left-12 bg-primary/10 border-primary/20 hover:bg-primary/20 text-primary hover:text-primary" />
